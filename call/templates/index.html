@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table width=""100%>
+         <tr>
+            <th>id</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>address</th>
+            <th>rollno</th>
+            <th>mobile</th>
+         </tr>
+
+         {% for emp in user.students %}
+         <tr>
+            <td>{{emp.id}}</td>
+            <td>{{emp.first_name}}</td>
+            <td>{{emp.last_name}}</td>
+            <td>{{emp.address}}</td>
+            <td>{{emp.roll_no}}</td>
+            <td>{{emp.mobile}}</td>
+
+         </tr>
+
+         {% endfor %}
+        </table>
+    </form>
+</body>
+</html>
